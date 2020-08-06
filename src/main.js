@@ -5,9 +5,13 @@ import store from './store'
 import Vant from 'vant';
 import 'vant/lib/index.css';
 
+import network from './network/'
+
 
 
 Vue.config.productionTip = false
+
+Vue.prototype.$network = network
 
 Vue.use(Vant);
 

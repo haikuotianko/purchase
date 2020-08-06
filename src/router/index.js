@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: 'Goods'
+    redirect: 'SelectDiscount'
   },
   {
     path: '/placeorder',
@@ -18,6 +18,16 @@ const routes = [
     path: '/Goods',
     name: 'Goods',
     component: () => import('../views/Goods/Goods.vue')
+  },
+  {
+    path: '/SelectFunction',
+    name: 'SelectFunction',
+    component: () => import('../views/SelectFunction/SelectFunction.vue')
+  },
+  {
+    path: '/SelectDiscount',
+    name: 'SelectDiscount',
+    component: () => import('../views/SelectDiscount/SelectDiscount.vue')
   }
 ]
 
